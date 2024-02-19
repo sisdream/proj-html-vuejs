@@ -66,7 +66,46 @@
             </div>
         </div>
     </section>
-    <section class="project"></section>
+    <section class="project">
+        <div class="project-top">
+            <h2>Our recent web designs &#38; some examples of past projects </h2>
+            <p class="pro-p">
+                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                there live the blind texts.Separated they live in Bookmarksgrove right at the coast of the 
+                Semantic, a large language ocean.Separated they live in Bookmarksgrove.Separated they live in Bookmarksgrove 
+                right at the coast of the Semantic, a large language ocean.
+            </p>
+        </div>
+        <div class="project-bottom">
+            <div class="cube">
+                <img src="/images/ina-soulis-227104-unsplash-1024x1024.jpg" alt="fiori">
+            </div>
+            <div class="cube">
+                <img src="/images/sunisa-misa-531163-unsplash-1024x1024.jpg" alt="ruota panoramica">
+            </div>
+            <div class="cube">
+                <img src="/images/355H-1024x1024.jpg" alt="scarpe gialle">
+            </div>
+            <div class="cube">
+                <img src="/images/photo-1448932252197-d19750584e56-1024x1024.jpg" alt="lavoro">
+            </div>
+            <div class="cube">
+                <img src="/images/business-competition-PB366D8-1024x1024.jpg" alt="origami">
+            </div>
+            <div class="cube">
+                <img src="/images/cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg" alt="divano">
+            </div>
+            <div class="cube">
+                <img src="/images/aa9a4539-PQGJ7HU-1024x1024.jpg" alt="mongolfiere">
+            </div>
+            <div class="cube">
+                <img src="/images/cody-davis-253928-unsplash-1024x1024.jpg" alt="agrume blu">
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5 mb-5">
+            <button type="button" class="btn btn-grad btn-outline-success">READ MORE</button>
+        </div>
+    </section>
     <section class="client"></section>
     <section class="blog"></section>
     <section class="work"></section>
@@ -136,12 +175,38 @@
 }
    
 .businesswoman{
-
     width: 500px;
     position: absolute;
     z-index: 2;
     left: 7rem;
     top: 4rem;
+    img{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+.project-top{
+    display: flex;
+    gap: 5rem;
+    margin: 20px 30px;
+    .pro-p{
+        width: 60%;
+        margin-top: 3rem;
+    }
+}
+
+.project-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+
+.cube{
+    margin: 4px;
+    width: calc(100% / 4 - 10px);
+    height: calc(100vw/ 4 - 20px);
+    
     img{
         width: 100%;
         border-radius: 20px;
