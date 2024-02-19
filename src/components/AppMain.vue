@@ -102,11 +102,27 @@
                 <img src="/images/cody-davis-253928-unsplash-1024x1024.jpg" alt="agrume blu">
             </div>
         </div>
-        <div class="d-flex justify-content-center mt-5 mb-5">
+        <div class="d-flex justify-content-center align-items-center">
             <button type="button" class="btn btn-grad btn-outline-success">READ MORE</button>
         </div>
     </section>
-    <section class="client"></section>
+    <section class="client">
+      <div class="client-text">
+        <div class="icona">
+            <i class="fa-solid fa-quote-left"></i>
+        </div>
+        <p>
+            When it comes to barbequing, there are two main schools of 
+            thought for the techniques that you can use.Freshly scrambled
+            eggs with applewood smoked bacon - are amazing!
+        </p>
+        <div class="circle">
+            <img src="/images/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="donna d'affari">
+        </div>
+        <h6>LISSA DURBIN</h6>
+        <p>Client</p>
+      </div>
+    </section>
     <section class="blog"></section>
     <section class="work"></section>
 </main>
@@ -124,10 +140,6 @@
     justify-content: center;
     flex-direction: column;
     width: 40%;
-}
-
-.icon i{
-    font-size: 3rem;
 }
 
 .website-right{
@@ -200,6 +212,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 10px;
+    margin-bottom: 100px;
 }
 
 .cube{
@@ -210,6 +223,50 @@
     img{
         width: 100%;
         border-radius: 20px;
+    }
+}
+
+.client{
+    margin-top: 100px;
+    background-image:
+    linear-gradient(
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9)
+    ),
+    url("/images/four-businesspeople-in-a-boardroom-with-paperwork-PC4V8H4.jpg");
+    opacity: 0.8;
+    height: 780px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;    
+}
+
+.client-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 40%;
+    color: #fff;
+}
+
+.icona{
+    margin: 100px 0;
+    font-size: 5rem;
+    color: #00d8a5;
+}
+
+.circle{
+    margin: 50px 0;
+    width: 100px;
+    height: 100px;
+    img{
+        width: 100%;
+        border-radius: 50%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 </style>
