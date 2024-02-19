@@ -123,7 +123,41 @@
         <p>Client</p>
       </div>
     </section>
-    <section class="blog"></section>
+    <section class="blog">
+        <h2 class="text-center pt-5">Latest News &#38; Our Blog </h2>
+        <div class="card-container">
+            <div class="card blog-card">
+                <img src="/images/serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg" alt="donna al telefono">
+            </div>
+            <div class="card blog-card">
+                <img src="/images/Businessman-at-the-desk-in-his-office-resting--1024x768.jpg" alt="uomo d'affari">
+            </div>
+            <div class="card blog-card">
+                <img src="/images/simple-home-office-with-tree-PBXRXYB-large-1024x768.jpg" alt="studio in casa">
+            </div>
+            <div class="blog-card card-text">
+                <p class="text-blog">May 24,2018.by Alex</p>
+                <div>
+                    <i class="fa-solid fa-circle"></i>
+                    <span> Marketing ideas</span>
+                </div>
+            </div>
+            <div class="blog-card card-text">
+                <p class="text-blog">May 24,2018.by Alex</p>
+                <div>
+                    <i class="fa-solid fa-circle"></i>
+                    <span> Rest During Working Hours</span>
+                </div>
+            </div>
+            <div class="blog-card card-text">
+                <p class="text-blog">May 24,2018.by Alex</p>
+                <div>
+                    <i class="fa-solid fa-circle"></i>
+                    <span> Devepol Your Startup Idea</span>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="work"></section>
 </main>
 </template>
@@ -267,6 +301,48 @@
         border-radius: 50%;
         height: 100%;
         object-fit: cover;
+    }
+}
+
+.blog{
+    margin-bottom: 100px;
+    background-color: #f9f9f9;
+   .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin: 50px 0;
+   }
+}
+
+.blog-card{
+    width: calc(100% / 3 - 0.8rem);
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px #e8e8e8;
+    border: 0;
+    img{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+.card-text{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    border-radius: 0;
+    position: relative;
+    bottom: 100px;
+    z-index: 6;
+    box-shadow: 0 0 0 0;
+    background-color: #fff;
+    width: 29%;
+    margin: 0 auto;
+    padding: 20px;
+    .text-blog{
+        color: #ddd;
     }
 }
 </style>
