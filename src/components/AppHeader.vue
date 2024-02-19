@@ -31,7 +31,7 @@
                 there live the blind texts.Separated they live in Bookmarksgrove right at the coast of the 
                 Semantic, a large language ocean.Separated they live in Bookmarksgrove.
             </p>
-            <button type="button" class="btn btn-black btn-outline-secondary">PURCHASE</button>
+            <button type="button" class="btn btn-black btn-outline-secondary">READ MORE</button>
             <div class="mt-5">
                 <ul>
                     <li><a href="#">FACEBOOK</a></li>
