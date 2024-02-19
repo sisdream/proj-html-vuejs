@@ -10,6 +10,14 @@
             <div class="logo">
                 <img src="/images/cropped-Group-39-2x.png" alt="logo">
             </div>
+            <ul class="m-0">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">SHOWCASE</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
             <button type="button" class="btn btn-grad btn-outline-success">PURCHASE</button>
         </div>
     </section>
@@ -18,7 +26,20 @@
             <h6>17 YEARS OF EXPERIENCE</h6>
             <h1>We Are a <br>
             Web Design Agency</h1>
-            <p></p>
+            <p>
+                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                there live the blind texts.Separated they live in Bookmarksgrove right at the coast of the 
+                Semantic, a large language ocean.Separated they live in Bookmarksgrove.
+            </p>
+            <button type="button" class="btn btn-black btn-outline-secondary">PURCHASE</button>
+            <div class="mt-5">
+                <ul>
+                    <li><a href="#">FACEBOOK</a></li>
+                    <li><a href="#">INSTAGRAM</a></li>
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="#">TWITTER</a></li>
+                </ul>
+            </div>
         </div>
         <div class="right">
             <img src="/images/Group-36-2x.png" alt="">
@@ -33,6 +54,7 @@
     left: 0;
     right: 0;
     top: 0;
+    z-index: 9999;
     background-color: #fff;
 }
 
@@ -69,7 +91,8 @@ h6{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 100px auto;
+    margin: 100px 20px;
+    width: 40%;
 }
 
 .right{
@@ -79,7 +102,7 @@ h6{
     img{
         width: 100%;
         display: block;
-        margin-left: 113px;
+        margin-left: 103px;
     }
 }
 
