@@ -32,6 +32,10 @@ export default {
             </div>
             <div class="col">
                 <h4>QUICK LINKS</h4>
+                <div class="d-flex gap-2">
+                    <span class="point"></span>
+                    <hr class="line">
+                </div>
                 <ul class="p-0 d-flex flex-column">
                     <li v-for="link in links">
                         <a href="#">{{ link }}</a>
@@ -40,6 +44,10 @@ export default {
             </div>
             <div class="col">
                 <h4>CONTACT</h4>
+                <div class="d-flex gap-2">
+                    <span class="point"></span>
+                    <hr class="line">
+                </div>
                 <ul class="p-0 d-flex flex-column">
                     <li>
                         Patricia C. Amedee 4401 Waldeck Street
@@ -51,6 +59,10 @@ export default {
             </div>
             <div class="col">
                 <h4>LOCATION ON MAP</h4>
+                <div class="d-flex gap-2">
+                    <span class="point"></span>
+                    <hr class="line">
+                </div>
                 <div class="map">
                     <img src="/images/map.png" alt="map">
                 </div>
@@ -62,6 +74,14 @@ export default {
             <i class="fa-regular fa-copyright"></i>
             2020 PHLOXBUSINESS THEME
         </p>
+        <div class="d-flex gap-3 align-items-center">
+            <span class="arrow">
+                <i class="fa-solid fa-arrow-up"></i>
+            </span>
+            <span class="comment">
+                <i class="fa-regular fa-comment"></i>
+            </span>
+        </div>
     </section>
 </footer>
 </template>
@@ -83,5 +103,27 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 50px;
+}
+
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #7e7e7e;
+}
+
+.comment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #527ceb;
 }
 </style>

@@ -24,7 +24,17 @@
 <template>
  <header>
     <section class="header-fixed">
-        <div class="banda-recapiti"></div>
+        <div class="banda-recapiti">
+            <div>
+                <span>(001) 88451234</span>
+                <span class="ms-3">88455438</span>
+            </div>
+            <div class="d-flex gap-3">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+            </div>
+        </div>
         <div class="banda-dinamica">
             <div class="logo">
                 <img src="/images/cropped-Group-39-2x.png" alt="logo">
@@ -44,7 +54,10 @@
         <div class="left">
             <h6>17 YEARS OF EXPERIENCE</h6>
             <h2>We Are a Web Design <span class="coloring-text">Agency</span></h2>
-            <hr class="line">
+            <div class="d-flex gap-2">
+                <span class="point"></span>
+                <hr class="line">
+            </div>
             <p>
                 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                 there live the blind texts.Separated they live in Bookmarksgrove right at the coast of the 
@@ -77,8 +90,13 @@
 }
 
 .banda-recapiti{
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
     height: 40px;
     background-color: #3b3b3b;
+    color: #fff;
 }
 
 .banda-dinamica{
@@ -104,7 +122,7 @@ h6{
     background: linear-gradient(90deg, rgba(6,217,163,1) 0%, rgba(79,221,129,1) 43%, rgba(147,224,97,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 300;
+    font-size: 1.3rem;
 }
 
 .left{

@@ -73,9 +73,20 @@ a{
     color: #00d9a6;
 }
 
+.point{
+    width: 7px;
+    height: 5px;
+    border-radius: 5px;
+    opacity: 1;
+    background: linear-gradient(90deg, rgba(6,217,163,1) 0%, rgba(79,221,129,1) 43%, rgba(147,224,97,1) 100%);
+}
+
 .line{
+    margin-top: 0;
+    border: 0;
     border-radius: 5px;
     width: 5rem;
     opacity: 1;
-    border: 5px solid #00d9a6;
+    background: linear-gradient(90deg, rgba(6,217,163,1) 0%, rgba(79,221,129,1) 43%, rgba(147,224,97,1) 100%);
+    height: 5px;
 }

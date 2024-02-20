@@ -6,7 +6,10 @@
     <section class="website">
         <div class="website-left">
             <h2>We Are Here To Make Your <span class="coloring-text">Website</span> Look More <span class="coloring-text">Elegant</span> And Stylish</h2>
-            <hr class="line">
+            <div class="d-flex gap-2">
+                <span class="point"></span>
+                <hr class="line">
+            </div>
             <button type="button" class="btn mt-5 btn-grad btn-outline-success">VIEW ALL</button>
         </div>
 
@@ -57,7 +60,10 @@
 
         <div class="mission-right">
             <h2>Learn more about our <span class="coloring-text">missions</span></h2>
-            <hr class="line">
+            <div class="d-flex gap-2">
+                <span class="point"></span>
+                <hr class="line">
+            </div>
             <p>
                 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                 there live the blind texts.Separated they live in Bookmarksgrove right at the coast of the 
@@ -70,7 +76,17 @@
     </section>
     <section class="project">
         <div class="project-top">
-            <h2>Our recent <span class="coloring-text">web designs</span> &#38; some examples of past <span class="coloring-text">projects</span></h2>
+            <div>
+                <div class="d-flex gap-2">
+                    <span class="point"></span>
+                    <hr class="line">
+                </div>
+                <h2>Our recent <span class="coloring-text">web designs</span> &#38; some examples of past <span class="coloring-text">projects</span></h2>
+                <div class="d-flex gap-2">
+                    <span class="point"></span>
+                    <hr class="line">
+                </div>
+            </div>
             <p class="pro-p">
                 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                 there live the blind texts.Separated they live in Bookmarksgrove right at the coast of the 
@@ -127,6 +143,10 @@
     </section>
     <section class="blog">
         <h2 class="text-center pt-5">Latest News &#38; Our <span class="coloring-text">Blog</span></h2>
+        <div class="d-flex gap-2">
+            <span class="point"></span>
+            <hr class="line">
+        </div>
         <div class="card-container">
             <div class="card blog-card">
                 <img src="/images/serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg" alt="donna al telefono">
