@@ -1,5 +1,24 @@
 <script>
-
+ export default {
+        data () {
+            return {
+                links: [
+                    'HOME',
+                    'ABOUT',
+                    'SERVICES',
+                    'SHOWCASE',
+                    'BLOG',
+                    'CONTACT'
+                ],
+                socials:[
+                    'FACEBOOK',
+                    'INSTAGRAM',
+                    'YOUTUBE',
+                    'TWITTER'
+                ]
+            }
+        },
+    }
 </script>
 
 <template>
@@ -11,12 +30,9 @@
                 <img src="/images/cropped-Group-39-2x.png" alt="logo">
             </div>
             <ul class="m-0">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">SHOWCASE</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li v-for="link in links">
+                    <a href="#">{{ link }}</a>
+                </li>
             </ul>
             <button type="button" class="btn btn-grad btn-outline-success">PURCHASE</button>
         </div>
@@ -34,10 +50,9 @@
             <button type="button" class="btn btn-black btn-outline-secondary">READ MORE</button>
             <div class="mt-5">
                 <ul>
-                    <li><a href="#">FACEBOOK</a></li>
-                    <li><a href="#">INSTAGRAM</a></li>
-                    <li><a href="#">YOUTUBE</a></li>
-                    <li><a href="#">TWITTER</a></li>
+                    <li v-for="social in socials">
+                        <a href="#">{{ social }}</a>
+                    </li>
                 </ul>
             </div>
         </div>
