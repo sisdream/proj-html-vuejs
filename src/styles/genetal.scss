@@ -27,10 +27,18 @@ p{
 
 .btn-grad{
     background: linear-gradient(90deg, rgba(6,217,163,1) 0%, rgba(79,221,129,1) 43%, rgba(147,224,97,1) 100%);
+    &:hover{
+        opacity: 0.9;
+        box-shadow: 2px 3px 12px  rgba(147,224,97,1);
+    }
 }
 
 .btn-black{
     background: linear-gradient(90deg, rgba(80,79,79,1) 0%, rgba(45,45,45,1) 58%, rgba(23,23,23,1) 100%);
+    &:hover{
+        opacity: 0.9;
+        box-shadow: 2px 3px 12px  rgba(80,79,79,1);
+    }
 }
 
 ul{
@@ -48,13 +56,8 @@ a{
     font-size: 3rem;
 }
 
-.web-card{
-    height: 250px;
-    width: 380px;
-    padding: 10px 30px;
-    border-radius: 25px;
-    box-shadow: 0px 9px 23px 4px #f1eded;
-    border: 0;
+i{
+    cursor: pointer;
 }
 
 .fa-circle{
@@ -63,6 +66,10 @@ a{
 
 .input-group{
     width: 70%;
+}
+
+.input-group input:focus{
+    box-shadow: 0 0 10px .1rem #5e5c5c !important;
 }
 
 .fa-magnifying-glass{

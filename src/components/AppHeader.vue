@@ -15,9 +15,36 @@
                     'INSTAGRAM',
                     'YOUTUBE',
                     'TWITTER'
-                ]
+                ],
+                images: [
+                    {
+                        id: 1,
+                        src: "/images/Group-36-2x.png",
+                    },
+                    {
+                        id: 2,
+                        src: "/images/Group-35-2x.png",
+                    },
+                    {
+                        id: 3,
+                        src: "/images/Group-40-2x.png",
+                    },
+                ],
+                image: {
+                    id: 1,
+                    src: "/images/Group-36-2x.png",
+                }
             }
         },
+        methods: {
+            switchImage(id){
+                this.images.forEach(image => {
+                    if (id === image.id) {
+                        this.image = image;
+                    }
+                });       
+            }
+        }
     }
 </script>
 
@@ -64,16 +91,21 @@
                 Semantic, a large language ocean.Separated they live in Bookmarksgrove.
             </p>
             <button type="button" class="btn btn-black btn-outline-secondary">READ MORE</button>
-            <div class="mt-5">
+            <div class="mt-5 d-flex gap-5">
                 <ul>
                     <li v-for="social in socials">
                         <a href="#">{{ social }}</a>
                     </li>
                 </ul>
+                <div class="btn-group rounded-pill btn-black p-1" role="group" aria-label="Basic example">
+                    <button @click="switchImage(1)" type="button" class="btn rounded-pill" :class="image.id === 1 ? 'btn-grad' : ''">01</button>
+                    <button @click="switchImage(2)" type="button" class="btn rounded-pill" :class="image.id === 2 ? 'btn-grad' : ''">02</button>
+                    <button @click="switchImage(3)" type="button" class="btn rounded-pill" :class="image.id === 3 ? 'btn-grad' : ''">03</button>
+                </div>
             </div>
         </div>
         <div class="right">
-            <img src="/images/Group-36-2x.png" alt="group">
+            <img :src="image.src" alt="group">
         </div>
     </section>
  </header>
@@ -120,7 +152,7 @@
 
 h6{
     background: linear-gradient(90deg, rgba(6,217,163,1) 0%, rgba(79,221,129,1) 43%, rgba(147,224,97,1) 100%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.3rem;
 }
@@ -134,9 +166,8 @@ h6{
 }
 
 .right{
-   width: 900px;
+    width: 900px;
     overflow: hidden;
-
     img{
         width: 100%;
         display: block;

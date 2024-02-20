@@ -3,7 +3,9 @@
 
 <template>
 <main>
+    <div class="banda"></div>
     <section class="website">
+       <div class="web-container">
         <div class="website-left">
             <h2>We Are Here To Make Your <span class="coloring-text">Website</span> Look More <span class="coloring-text">Elegant</span> And Stylish</h2>
             <div class="d-flex gap-2">
@@ -46,6 +48,7 @@
                 <p>Far far away,bhehind the word mountains, far from the countries Vokalia Separated...</p>
             </div>
         </div>
+       </div>
     </section>
     <section class="missions">
         <div class="mission-left">
@@ -95,29 +98,84 @@
             </p>
         </div>
         <div class="project-bottom">
-            <div class="cube">
-                <img src="/images/ina-soulis-227104-unsplash-1024x1024.jpg" alt="fiori">
+            <div class="cube-container">
+                <div class="cube">
+                    <img src="/images/ina-soulis-227104-unsplash-1024x1024.jpg" alt="fiori">
+                    <div class="centered">
+                        <h3>The Basket of Flowers</h3>
+                        <p class="text-white">BRANDING - MARKETING</p>
+                    </div>
+                </div>
             </div>
-            <div class="cube">
-                <img src="/images/sunisa-misa-531163-unsplash-1024x1024.jpg" alt="ruota panoramica">
+            
+            <div class="cube-container">
+                <div class="cube">
+                    <img src="/images/sunisa-misa-531163-unsplash-1024x1024.jpg" alt="ruota panoramica">
+                    <div class="centered">
+                        <h3>A Famous Ferris Wheel </h3>
+                        <p class="text-white">MARKETING</p>
+                    </div>
+                </div>
             </div>
-            <div class="cube">
-                <img src="/images/355H-1024x1024.jpg" alt="scarpe gialle">
+
+            <div class="cube-container">
+                <div class="cube">
+                    <img src="/images/355H-1024x1024.jpg" alt="scarpe gialle">
+                    <div class="centered">
+                        <h3>Complementary Colors</h3>
+                        <p class="text-white">BRANDING - MARKETING</p>
+                    </div>
+                </div>
             </div>
-            <div class="cube">
-                <img src="/images/photo-1448932252197-d19750584e56-1024x1024.jpg" alt="lavoro">
+
+            <div class="cube-container">
+                <div class="cube">
+                    <img src="/images/photo-1448932252197-d19750584e56-1024x1024.jpg" alt="lavoro">
+                    <div class="centered">
+                        <h3>Business Prestige</h3>
+                        <p class="text-white">BRANDING</p>
+                    </div>
+                </div>
             </div>
-            <div class="cube">
-                <img src="/images/business-competition-PB366D8-1024x1024.jpg" alt="origami">
+
+            <div class="cube-container">
+                <div class="cube">
+                    <img src="/images/business-competition-PB366D8-1024x1024.jpg" alt="origami">
+                    <div class="centered">
+                        <h3>Colorful Origami Boats</h3>
+                        <p class="text-white">BRANDING - MARKETING</p>
+                    </div>
+                </div>
             </div>
-            <div class="cube">
-                <img src="/images/cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg" alt="divano">
+
+            <div class="cube-container">
+                <div class="cube">
+                    <img src="/images/cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg" alt="divano">
+                    <div class="centered">
+                        <h3>Modern Couch</h3>
+                        <p class="text-white">MARKETING</p>
+                    </div>
+                </div>
             </div>
-            <div class="cube">
-                <img src="/images/aa9a4539-PQGJ7HU-1024x1024.jpg" alt="mongolfiere">
+
+            <div class="cube-container">
+                <div class="cube">
+                    <img src="/images/aa9a4539-PQGJ7HU-1024x1024.jpg" alt="mongolfiere">
+                    <div class="centered">
+                        <h3>Hot Air Ballons</h3>
+                        <p class="text-white">BRANDING - MARKETING</p>
+                    </div>
+                </div>
             </div>
-            <div class="cube">
-                <img src="/images/cody-davis-253928-unsplash-1024x1024.jpg" alt="agrume blu">
+
+            <div class="cube-container">
+                <div class="cube">
+                    <img src="/images/cody-davis-253928-unsplash-1024x1024.jpg" alt="agrume blu">
+                    <div class="centered">
+                        <h3>Make Difference</h3>
+                        <p class="text-white">BRANDING</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="d-flex justify-content-center align-items-center">
@@ -230,10 +288,18 @@
 </template>
 
 <style>
+.banda{
+    height: 100px;
+    position: relative;
+    bottom: 30px;
+    background-color: #fff;
+}
+
 .website{
-    display: flex;
-    margin-top: 30px;
     padding: 0 20px;
+    .web-container{
+        display: flex;
+    }  
 }
 
 .website-left{
@@ -249,6 +315,21 @@
     gap: 3rem;
     width: 60%;
     flex-wrap: wrap;
+}
+
+.web-card{
+    height: 250px;
+    width: 380px;
+    padding: 10px 30px;
+    border-radius: 25px;
+    box-shadow: 0px 9px 23px 4px #f1eded;
+    border: 0;
+    cursor: pointer;
+    &:hover{
+        background: linear-gradient(90deg, rgba(6,217,163,1) 0%, rgba(79,221,129,1) 43%, rgba(147,224,97,1) 100%);
+        color: #fff;
+        box-shadow: 2px 3px 12px  rgba(147,224,97,1);
+    }
 }
 
 .missions{
@@ -313,20 +394,52 @@
 .project-bottom{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 10px;
+    gap: 1rem;
+    margin: 0 auto;
+    width: 95%;
+    justify-content: center;
     margin-bottom: 100px;
+    .cube-container:hover .cube::before{
+        opacity: 0.7;
+    }
+}
+
+.cube-container{
+    width: calc(100% / 4 - 1rem);
+    height: calc(100vw/ 4 - 20px);
 }
 
 .cube{
-    margin: 4px;
-    width: calc(100% / 4 - 10px);
-    height: calc(100vw/ 4 - 20px);
-    
+    position: relative;
+    overflow: 'hidden';
     img{
         width: 100%;
         border-radius: 20px;
     }
+    &:hover .centered{
+        opacity: 1;
+    }
 }
+
+.cube::before {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    transition: 0.5s ease-out;
+    background: linear-gradient(90deg, rgba(6,217,163,1) 0%, rgba(79,221,129,1) 43%, rgba(147,224,97,1) 100%);
+}
+
+.centered{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 0;
+}
+
 
 .client{
     margin-top: 100px;

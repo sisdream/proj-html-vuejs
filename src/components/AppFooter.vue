@@ -115,6 +115,7 @@ export default {
     border-radius: 50%;
     background-color: #fff;
     color: #7e7e7e;
+    cursor: pointer;
 }
 
 .comment{
@@ -125,5 +126,6 @@ export default {
     height: 50px;
     border-radius: 50%;
     background-color: #527ceb;
+    cursor: pointer;
 }
 </style>
