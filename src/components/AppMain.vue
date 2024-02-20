@@ -129,36 +129,81 @@
             <div class="card blog-card">
                 <img src="/images/serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg" alt="donna al telefono">
             </div>
+
             <div class="card blog-card">
                 <img src="/images/Businessman-at-the-desk-in-his-office-resting--1024x768.jpg" alt="uomo d'affari">
             </div>
+
             <div class="card blog-card">
                 <img src="/images/simple-home-office-with-tree-PBXRXYB-large-1024x768.jpg" alt="studio in casa">
             </div>
+
             <div class="blog-card card-text">
                 <p class="text-blog">May 24,2018.by Alex</p>
                 <div>
                     <i class="fa-solid fa-circle"></i>
-                    <span> Marketing ideas</span>
+                    <span class="fs-4"> Marketing ideas</span>
                 </div>
             </div>
+
             <div class="blog-card card-text">
                 <p class="text-blog">May 24,2018.by Alex</p>
                 <div>
                     <i class="fa-solid fa-circle"></i>
-                    <span> Rest During Working Hours</span>
+                    <span class="fs-4"> Rest During Working Hours</span>
                 </div>
             </div>
+
             <div class="blog-card card-text">
                 <p class="text-blog">May 24,2018.by Alex</p>
                 <div>
                     <i class="fa-solid fa-circle"></i>
-                    <span> Devepol Your Startup Idea</span>
+                    <span class="fs-4"> Devepol Your Startup Idea</span>
                 </div>
             </div>
         </div>
+
+        <button type="button" class="btn btn-black mb-3 btn-outline-secondary">VEIW ALL POST</button>
     </section>
-    <section class="work"></section>
+    <section class="work">
+        <div class="work-container">
+            <div class="card card-work new-project">
+                <p class="text-blog">Are You Ready?</p>
+                <h2>Start a New Project</h2>
+                <div class="input-group mt-5 mb-3">
+                    <input type="text" class="form-control bg-secondary  border-0" placeholder="Enter your Email Address" aria-label="Recipient's username">
+                    <button class="btn btn-secondary  border-0" type="button">Submit</button>
+                </div>   
+            </div>
+    
+            <div class="card card-work about-work">
+                <p class="text-blog">What Are You Waiting for?</p>
+                <h2>Let's Talk About Work</h2>
+                <button type="button" class="btn btn-black mt-5 mb-3 btn-outline-secondary">VEIW ALL POST</button>
+            </div>
+        </div>
+
+        <div class="container-loghi">
+            <div class="card card-loghi">
+                <img src="/images/client-1-2x.png" alt="avant garde">
+            </div>
+            <div class="card card-loghi">
+                <img src="/images/client-9-2x.png" alt="fastlane">
+            </div>
+            <div class="card card-loghi">
+                <img src="/images/client-7-2x.png" alt="ron jones">
+            </div>
+            <div class="card card-loghi">
+                <img src="/images/client-3-2x.png" alt="chippy">
+            </div>
+            <div class="card card-loghi">
+                <img src="/images/client-4-2x.png" alt="bullseye">
+            </div>
+            <div class="card card-loghi">
+                <img src="/images/client-5-2x.png" alt="furnitures">
+            </div>
+        </div>
+    </section>
 </main>
 </template>
 
@@ -305,7 +350,10 @@
 }
 
 .blog{
-    margin-bottom: 100px;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #f9f9f9;
    .card-container{
         display: flex;
@@ -341,8 +389,56 @@
     width: 29%;
     margin: 0 auto;
     padding: 20px;
+    box-shadow: 8px 8px 8px #e8e8e8;
     .text-blog{
         color: #ddd;
     }
 }
+
+.work-container{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+
+.card-work{
+    height: 300px;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-project{
+    background-color: #373737;
+    color: #fff;
+}
+
+.about-work{
+    background-color: #3ddc89;
+    color: #fff;
+}
+
+.container-loghi{
+    display: flex;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.card-loghi{
+    width: calc(100% / 6);
+    height: 100px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    img{
+        width: 100%;
+        object-fit: none;
+    }
+}
+
 </style>
