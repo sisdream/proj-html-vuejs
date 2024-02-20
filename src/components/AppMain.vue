@@ -1,4 +1,32 @@
 <script>
+export default {
+    data () {
+        return {
+            cards: [
+                {
+                    icon: 'fa-solid fa-gauge-high',
+                    title: 'Speed Optimization',
+                    text: 'Far far away,bhehind the word mountains, far from the countries Vokalia Separated...'
+                },
+                {
+                    icon: 'fa-solid fa-cloud',
+                    title: 'Cloud Solution',
+                    text: 'Far far away,bhehind the word mountains, far from the countries Vokalia Separated...'
+                },
+                {
+                    icon: 'fa-solid fa-tablet-screen-button',
+                    title: 'Website Design',
+                    text: 'Far far away,bhehind the word mountains, far from the countries Vokalia Separated...'
+                },
+                {
+                    icon: 'fa-solid fa-stopwatch',
+                    title: 'Online Marketing',
+                    text: 'Far far away,bhehind the word mountains, far from the countries Vokalia Separated...'
+                }
+            ],
+        }
+    },
+ }
 </script>
 
 <template>
@@ -16,36 +44,12 @@
         </div>
 
         <div class="website-right">
-            <div class="card web-card">
+            <div class="card web-card" v-for="card in cards">
                 <div class="icon mt-3 mb-4">
-                    <i class="fa-solid fa-gauge-high"></i>
+                    <i :class="card.icon"></i>
                 </div>
-                <h4 class="mb-4">Speed Optimization</h4>
-                <p>Far far away,bhehind the word mountains, far from the countries Vokalia Separated...</p>
-            </div>
-
-            <div class="card web-card">
-                <div class="icon mt-3 mb-4">
-                    <i class="fa-solid fa-cloud"></i>
-                </div>
-                <h4 class="mb-4">Cloud Solution</h4>
-                <p>Far far away,bhehind the word mountains, far from the countries Vokalia Separated...</p>
-            </div>
-
-            <div class="card web-card">
-                <div class="icon mt-3 mb-4">
-                    <i class="fa-solid fa-tablet-screen-button"></i>
-                </div>
-                <h4 class="mb-4">Website Design</h4>
-                <p>Far far away,bhehind the word mountains, far from the countries Vokalia Separated...</p>
-            </div>
-
-            <div class="card web-card">
-                <div class="icon mt-3 mb-4">
-                    <i class="fa-solid fa-stopwatch"></i>
-                </div>
-                <h4 class="mb-4">Online Marketing</h4>
-                <p>Far far away,bhehind the word mountains, far from the countries Vokalia Separated...</p>
+                <h4 class="mb-4">{{card.title}}</h4>
+                <p>{{ card.text }}</p>
             </div>
         </div>
        </div>
@@ -325,12 +329,16 @@
     box-shadow: 0px 9px 23px 4px #f1eded;
     border: 0;
     cursor: pointer;
+    p:hover{
+        color: #fff;
+    }
     &:hover{
         background: linear-gradient(90deg, rgba(6,217,163,1) 0%, rgba(79,221,129,1) 43%, rgba(147,224,97,1) 100%);
         color: #fff;
         box-shadow: 2px 3px 12px  rgba(147,224,97,1);
     }
 }
+
 
 .missions{
     display: flex;

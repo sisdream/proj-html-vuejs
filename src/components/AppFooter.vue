@@ -17,6 +17,24 @@ export default {
 
 <template>
 <footer>
+    <div class="demo">
+        <div class="demo-contain">
+            <div class="demo-btn">
+                <i class="fa-solid fa-table-cells-large me-1"></i>
+                <span>Browse DEmos</span>
+            </div>
+
+            <div class="demo-btn">
+                <i class="fa-solid fa-bag-shopping me-1"></i>
+                <span>Buy Now!</span>
+            </div>
+
+            <div class="demo-btn">
+                <i class="fa-solid fa-right-from-bracket me-1"></i>
+                <span>Export Section</span>
+            </div>
+        </div>
+    </div>
     <section class="info">
         <div class="row">
             <div class="col">
@@ -87,6 +105,34 @@ export default {
 </template>
 
 <style>
+.demo{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 9999;
+    transform: translate(20px,-50%);
+}
+
+.demo-contain{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    transition-delay: 50ms;
+}
+
+.demo-btn{
+    color: #fff;
+    background-color: #858585;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    &:hover{
+        background-color: #527ceb;
+        transform: scale(1.1);
+    }
+}
+
+
 .info{
     padding: 100px;
 }
