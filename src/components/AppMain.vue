@@ -5,8 +5,9 @@
 <main>
     <section class="website">
         <div class="website-left">
-            <h2>We Are Here To Make Your Website Look More Elegant And Stylish</h2>
-            <button type="button" class="btn btn-grad btn-outline-success">VIEW ALL</button>
+            <h2>We Are Here To Make Your <span class="coloring-text">Website</span> Look More <span class="coloring-text">Elegant</span> And Stylish</h2>
+            <hr class="line">
+            <button type="button" class="btn mt-5 btn-grad btn-outline-success">VIEW ALL</button>
         </div>
 
         <div class="website-right">
@@ -55,7 +56,8 @@
         </div>
 
         <div class="mission-right">
-            <h2>Learn more about our missions</h2>
+            <h2>Learn more about our <span class="coloring-text">missions</span></h2>
+            <hr class="line">
             <p>
                 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                 there live the blind texts.Separated they live in Bookmarksgrove right at the coast of the 
@@ -68,7 +70,7 @@
     </section>
     <section class="project">
         <div class="project-top">
-            <h2>Our recent web designs &#38; some examples of past projects </h2>
+            <h2>Our recent <span class="coloring-text">web designs</span> &#38; some examples of past <span class="coloring-text">projects</span></h2>
             <p class="pro-p">
                 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                 there live the blind texts.Separated they live in Bookmarksgrove right at the coast of the 
@@ -111,7 +113,7 @@
         <div class="icona">
             <i class="fa-solid fa-quote-left"></i>
         </div>
-        <p>
+        <p class="text-white fs-4">
             When it comes to barbequing, there are two main schools of 
             thought for the techniques that you can use.Freshly scrambled
             eggs with applewood smoked bacon - are amazing!
@@ -124,7 +126,7 @@
       </div>
     </section>
     <section class="blog">
-        <h2 class="text-center pt-5">Latest News &#38; Our Blog </h2>
+        <h2 class="text-center pt-5">Latest News &#38; Our <span class="coloring-text">Blog</span></h2>
         <div class="card-container">
             <div class="card blog-card">
                 <img src="/images/serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg" alt="donna al telefono">
@@ -169,7 +171,7 @@
         <div class="work-container">
             <div class="card card-work new-project">
                 <p class="text-blog">Are You Ready?</p>
-                <h2>Start a New Project</h2>
+                <h3>Start a New Project</h3>
                 <div class="input-group mt-5 mb-3">
                     <input type="text" class="form-control bg-secondary  border-0" placeholder="Enter your Email Address" aria-label="Recipient's username">
                     <button class="btn btn-secondary  border-0" type="button">Submit</button>
@@ -178,7 +180,7 @@
     
             <div class="card card-work about-work">
                 <p class="text-blog">What Are You Waiting for?</p>
-                <h2>Let's Talk About Work</h2>
+                <h3>Let's Talk About Work</h3>
                 <button type="button" class="btn btn-black mt-5 mb-3 btn-outline-secondary">VEIW ALL POST</button>
             </div>
         </div>
@@ -211,19 +213,20 @@
 .website{
     display: flex;
     margin-top: 30px;
+    padding: 0 20px;
 }
 
 .website-left{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    width: 40%;
+    width: 45%;
 }
 
 .website-right{
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
     width: 60%;
     flex-wrap: wrap;
 }
@@ -332,7 +335,7 @@
 }
 
 .icona{
-    margin: 100px 0;
+    margin: 50px 0;
     font-size: 5rem;
     color: #00d8a5;
 }
@@ -400,11 +403,15 @@
     gap: 1rem;
     justify-content: center;
     background-color: #f9f9f9;
+    h3{
+        font-size: 2rem;
+    }
 }
 
 .card-work{
-    height: 300px;
+    height: 320px;
     width: 48%;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -412,12 +419,13 @@
 }
 
 .new-project{
-    background-color: #373737;
+    background: linear-gradient(90deg, rgba(80,79,79,1) 0%, rgba(45,45,45,1) 58%, rgba(23,23,23,1) 100%);
     color: #fff;
 }
 
 .about-work{
-    background-color: #3ddc89;
+   
+    background: linear-gradient(90deg, rgba(6,217,163,1) 0%, rgba(79,221,129,1) 43%, rgba(147,224,97,1) 100%);
     color: #fff;
 }
 

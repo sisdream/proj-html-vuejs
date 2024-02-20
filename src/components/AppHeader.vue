@@ -34,14 +34,17 @@
                     <a href="#">{{ link }}</a>
                 </li>
             </ul>
-            <button type="button" class="btn btn-grad btn-outline-success">PURCHASE</button>
+            <div>
+                <button type="button" class="btn btn-grad btn-outline-success">PURCHASE</button>
+                <i class="ms-4 fa-solid fa-magnifying-glass"></i>
+            </div>
         </div>
     </section>
     <section class="jumbo">
         <div class="left">
             <h6>17 YEARS OF EXPERIENCE</h6>
-            <h1>We Are a <br>
-            Web Design Agency</h1>
+            <h2>We Are a Web Design <span class="coloring-text">Agency</span></h2>
+            <hr class="line">
             <p>
                 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
                 there live the blind texts.Separated they live in Bookmarksgrove right at the coast of the 
@@ -57,7 +60,7 @@
             </div>
         </div>
         <div class="right">
-            <img src="/images/Group-36-2x.png" alt="">
+            <img src="/images/Group-36-2x.png" alt="group">
         </div>
     </section>
  </header>
@@ -98,7 +101,9 @@
 }
 
 h6{
-    color: #72e190;
+    background: linear-gradient(90deg, rgba(6,217,163,1) 0%, rgba(79,221,129,1) 43%, rgba(147,224,97,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 300;
 }
 

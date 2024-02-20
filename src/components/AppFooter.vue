@@ -57,7 +57,12 @@ export default {
             </div>
         </div>
     </section>
-    <section class="copy"></section>
+    <section class="copy">
+        <p>
+            <i class="fa-regular fa-copyright"></i>
+            2020 PHLOXBUSINESS THEME
+        </p>
+    </section>
 </footer>
 </template>
 
@@ -66,9 +71,17 @@ export default {
     padding: 100px;
 }
 
+.info li,
+.info li a{
+    color: #7e7e7e;
+    
+}
+
 .copy{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(115,115,115,1) 0%, rgba(24,24,24,1) 27%); 
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,64,64,1) 0%, rgba(5,5,5,1) 100%);
     height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 </style>
