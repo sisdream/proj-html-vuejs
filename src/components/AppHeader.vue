@@ -50,7 +50,7 @@
 
 <template>
  <header>
-    <section class="header-fixed">
+    <section class="header-fixed"> 
         <div class="banda-recapiti">
             <div>
                 <span>(001) 88451234</span>
@@ -97,10 +97,10 @@
                         <a href="#">{{ social }}</a>
                     </li>
                 </ul>
-                <div class="btn-group rounded-pill btn-black p-1" role="group" aria-label="Basic example">
-                    <button @click="switchImage(1)" type="button" class="btn rounded-pill" :class="image.id === 1 ? 'btn-grad' : ''">01</button>
-                    <button @click="switchImage(2)" type="button" class="btn rounded-pill" :class="image.id === 2 ? 'btn-grad' : ''">02</button>
-                    <button @click="switchImage(3)" type="button" class="btn rounded-pill" :class="image.id === 3 ? 'btn-grad' : ''">03</button>
+                <div class="btn-group rounded-pill p-1" role="group" aria-label="Basic example">
+                    <button @click="switchImage(1)" type="button" class="btn rounded-pill" :class="image.id === 1 ? 'btn-grad-btn' : ''">01</button>
+                    <button @click="switchImage(2)" type="button" class="btn rounded-pill" :class="image.id === 2 ? 'btn-grad-btn' : ''">02</button>
+                    <button @click="switchImage(3)" type="button" class="btn rounded-pill" :class="image.id === 3 ? 'btn-grad-btn' : ''">03</button>
                 </div>
             </div>
         </div>
@@ -112,6 +112,8 @@
 </template>
 
 <style lang="scss">
+@use '../styles/responsive/responsive.scss' as *;
+
 .header-fixed{
     position: fixed;
     left: 0;
@@ -168,6 +170,9 @@ h6{
 .right{
     width: 900px;
     overflow: hidden;
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 3s;
     img{
         width: 100%;
         display: block;
@@ -175,4 +180,8 @@ h6{
     }
 }
 
+@keyframes mymove {
+    0%   {left: 400px;}
+    100% {left: 0px;}
+}
 </style>

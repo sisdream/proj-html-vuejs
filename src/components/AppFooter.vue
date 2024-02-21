@@ -104,7 +104,9 @@ export default {
 </footer>
 </template>
 
-<style>
+<style lang="scss">
+@use '../styles/responsive/responsive.scss' as *;
+
 .demo{
     position: fixed;
     right: 0;

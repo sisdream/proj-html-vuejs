@@ -1,0 +1,28 @@
+@media only screen and (min-width: 540px) and (max-width: 720px){
+    .logo img{
+        width: 200px;
+    }
+
+    ul li a{
+       display: none;
+    }
+
+    .web-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .website-left{
+        width: 100%;
+    }
+    
+    .website-right{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

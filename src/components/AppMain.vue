@@ -223,7 +223,7 @@ export default {
             </div>
 
             <div class="blog-card card-text">
-                <p class="text-blog">May 24,2018.by Alex</p>
+                <p class="text-blog">May 24,2018 by Alex</p>
                 <div>
                     <i class="fa-solid fa-circle"></i>
                     <span class="fs-4"> Marketing ideas</span>
@@ -231,7 +231,7 @@ export default {
             </div>
 
             <div class="blog-card card-text">
-                <p class="text-blog">May 24,2018.by Alex</p>
+                <p class="text-blog">May 24,2018 by Alex</p>
                 <div>
                     <i class="fa-solid fa-circle"></i>
                     <span class="fs-4"> Rest During Working Hours</span>
@@ -239,7 +239,7 @@ export default {
             </div>
 
             <div class="blog-card card-text">
-                <p class="text-blog">May 24,2018.by Alex</p>
+                <p class="text-blog">May 24,2018 by Alex</p>
                 <div>
                     <i class="fa-solid fa-circle"></i>
                     <span class="fs-4"> Devepol Your Startup Idea</span>
@@ -291,7 +291,9 @@ export default {
 </main>
 </template>
 
-<style>
+<style lang="scss">
+@use '../styles/responsive/responsive.scss' as *;
+
 .banda{
     height: 100px;
     position: relative;
@@ -512,9 +514,15 @@ export default {
     border-radius: 20px;
     box-shadow: 8px 8px 8px #e8e8e8;
     border: 0;
+    cursor: pointer;
     img{
         width: 100%;
         border-radius: 20px;
+    }
+    &:hover{
+        background: linear-gradient(90deg, rgba(6,217,163,1) 0%, rgba(79,221,129,1) 43%, rgba(147,224,97,1) 100%);
+        transform: scale(1.1);
+        color: #fff;
     }
 }
 
