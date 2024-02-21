@@ -7,6 +7,26 @@
        display: none;
     }
 
+    .jumbo{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .mod{
+        flex-direction: column;
+    }
+
+    .right img{
+        width: 500px;
+    }
+   
+
     .web-container{
         display: flex;
         flex-direction: column;
@@ -27,14 +47,22 @@
 
     .missions{
         padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icona{
+        margin: 30px 0;
     }
 
     .architect img{
-        width: 260px;
+        width: 50%;
     }
     .arc-color{
-        width: 260px;
-        height: 260px;
+        width: 50%;
+        height: 100%;
     }
 
     .cube-container{
@@ -59,19 +87,14 @@
         width: 50%;
         position: absolute;
         padding: 5px;
-        height: 80px;
     }
 
     .card-idea{
-        top: 19rem;
+        top: 12rem;
     }
 
-    .text-card{
-        font-size: 0.8rem;
-    }
-    
     .card-hour{
-        bottom: 25rem;
+        bottom: 19rem;
     }
 
     .card-startup{
@@ -143,12 +166,12 @@
     }
 
     .architect img{
-        width: 370px;
+        width: 60%;
     }
     
     .arc-color{
-        width: 370px;
-        height: 350px;
+        width: 60%;
+        height: 100%;
     }
 
     .row{

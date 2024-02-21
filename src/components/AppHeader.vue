@@ -91,7 +91,7 @@
                 Semantic, a large language ocean.Separated they live in Bookmarksgrove.
             </p>
             <button type="button" class="btn btn-black btn-outline-secondary">READ MORE</button>
-            <div class="mt-5 d-flex gap-5">
+            <div class="mt-5 d-flex gap-5 mod">
                 <ul>
                     <li v-for="social in socials">
                         <a href="#">{{ social }}</a>
