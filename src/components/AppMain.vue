@@ -222,7 +222,7 @@ export default {
                 <img src="/images/simple-home-office-with-tree-PBXRXYB-large-1024x768.jpg" alt="studio in casa">
             </div>
 
-            <div class="blog-card card-text">
+            <div class="blog-card card-text card-idea">
                 <p class="text-blog">May 24,2018 by Alex</p>
                 <div>
                     <i class="fa-solid fa-circle"></i>
@@ -230,7 +230,7 @@ export default {
                 </div>
             </div>
 
-            <div class="blog-card card-text">
+            <div class="blog-card card-text card-hour">
                 <p class="text-blog">May 24,2018 by Alex</p>
                 <div>
                     <i class="fa-solid fa-circle"></i>
@@ -238,7 +238,7 @@ export default {
                 </div>
             </div>
 
-            <div class="blog-card card-text">
+            <div class="blog-card card-text card-startup">
                 <p class="text-blog">May 24,2018 by Alex</p>
                 <div>
                     <i class="fa-solid fa-circle"></i>
