@@ -137,15 +137,13 @@ export default {
     }
 }
 
-
 .info{
     padding: 100px;
 }
 
 .info li,
 .info li a{
-    color: #7e7e7e;
-    
+    color: #7e7e7e;  
 }
 
 .map{

@@ -188,19 +188,19 @@ export default {
     </section>
     <section class="client">
       <div class="client-text">
-        <div class="icona">
-            <i class="fa-solid fa-quote-left"></i>
-        </div>
-        <p class="text-white fs-4">
+            <div class="icona">
+             <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p class="text-white fs-4 ">
             When it comes to barbequing, there are two main schools of 
             thought for the techniques that you can use.Freshly scrambled
             eggs with applewood smoked bacon - are amazing!
-        </p>
-        <div class="circle">
-            <img src="/images/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="donna d'affari">
-        </div>
-        <h6>LISSA DURBIN</h6>
-        <p>Client</p>
+            </p>
+            <div class="circle">
+                <img src="/images/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="donna d'affari">
+            </div>
+            <h6>LISSA DURBIN</h6>
+            <p>Client</p>
       </div>
     </section>
     <section class="blog">
@@ -342,7 +342,6 @@ export default {
     }
 }
 
-
 .missions{
     display: flex;
     margin-top: 50px;
@@ -463,7 +462,6 @@ export default {
     opacity: 0;
 }
 
-
 .client{
     margin-top: 100px;
     background-image:
@@ -488,6 +486,12 @@ export default {
     margin: 0 auto;
     width: 40%;
     color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.client-text p:hover{
+    transform: scale(1.3);
 }
 
 .icona{
@@ -613,5 +617,4 @@ export default {
         object-fit: none;
     }
 }
-
 </style>
