@@ -331,13 +331,14 @@ export default {
     box-shadow: 0px 9px 23px 4px #f1eded;
     border: 0;
     cursor: pointer;
-    p:hover{
-        color: #fff;
-    }
     &:hover{
         background: linear-gradient(90deg, rgba(6,217,163,1) 0%, rgba(79,221,129,1) 43%, rgba(147,224,97,1) 100%);
         color: #fff;
         box-shadow: 2px 3px 12px  rgba(147,224,97,1);
+    }
+
+    &:hover p{
+        color: #fff;
     }
 }
 
@@ -371,14 +372,13 @@ export default {
 }
 
 .architect:hover{
-    animation: mymove 5s;
+    animation: mymove 3s;
 }
 
 @keyframes mymove{
-    0%   {right: 400px;}
-    100% {right: 0px;}
+    0%   {left: 0px;}
+    100% {left: 20%}
 }
-
 
 .arc-color{
     width: 550px;
@@ -434,6 +434,7 @@ export default {
 .cube{
     position: relative;
     overflow: 'hidden';
+    cursor: pointer;
     img{
         width: 100%;
         border-radius: 20px;
@@ -527,14 +528,17 @@ export default {
     box-shadow: 8px 8px 8px #e8e8e8;
     border: 0;
     cursor: pointer;
+    overflow: hidden;
     img{
         width: 100%;
         border-radius: 20px;
     }
     &:hover{
         background: linear-gradient(90deg, rgba(6,217,163,1) 0%, rgba(79,221,129,1) 43%, rgba(147,224,97,1) 100%);
-        transform: scale(1.1);
         color: #fff;
+    }
+    &:hover .card-text {
+        transform: scale(1.1);
     }
 }
 

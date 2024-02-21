@@ -49,7 +49,7 @@
 </script>
 
 <template>
- <header>
+ <header id="top">
     <section class="header-fixed"> 
         <div class="banda-recapiti">
             <div>
@@ -171,7 +171,7 @@ h6{
     width: 900px;
     overflow: hidden;
     position: relative;
-    animation-name: mymove;
+    animation-name: mymoves;
     animation-duration: 3s;
     img{
         width: 100%;
@@ -180,7 +180,7 @@ h6{
     }
 }
 
-@keyframes mymove {
+@keyframes mymoves {
     0%   {left: 400px;}
     100% {left: 0px;}
 }

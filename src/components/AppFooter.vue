@@ -21,7 +21,7 @@ export default {
         <div class="demo-contain">
             <div class="demo-btn">
                 <i class="fa-solid fa-table-cells-large me-1"></i>
-                <span>Browse DEmos</span>
+                <span>Browse Demos</span>
             </div>
 
             <div class="demo-btn">
@@ -94,7 +94,7 @@ export default {
         </p>
         <div class="d-flex gap-3 align-items-center">
             <span class="arrow">
-                <i class="fa-solid fa-arrow-up"></i>
+                <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
             </span>
             <span class="comment">
                 <i class="fa-regular fa-comment"></i>
@@ -109,7 +109,7 @@ export default {
 
 .demo{
     position: fixed;
-    right: 0;
+    right: 0px;
     top: 50%;
     z-index: 9999;
     transform: translate(20px,-50%);
@@ -119,18 +119,21 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
-    transition-delay: 50ms;
 }
 
 .demo-btn{
+    width: 200px;
+    position: relative;
+    right: -30px;
     color: #fff;
     background-color: #858585;
     border-radius: 5px;
     padding: 5px 10px;
+    transition: ease-in-out .3s;
     cursor: pointer;
     &:hover{
         background-color: #527ceb;
-        transform: scale(1.1);
+        right: 0;
     }
 }
 
@@ -145,6 +148,10 @@ export default {
     
 }
 
+.map{
+    cursor: grab;
+}
+
 .copy{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,64,64,1) 0%, rgba(5,5,5,1) 100%);
     height: 100px;
@@ -155,6 +162,10 @@ export default {
 }
 
 .arrow{
+    position: fixed;
+    right: 100px;
+    bottom: 5%;
+    z-index: 80;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,11 +173,23 @@ export default {
     height: 30px;
     border-radius: 50%;
     background-color: #fff;
+    border: 1px solid #7e7e7e;
     color: #7e7e7e;
     cursor: pointer;
+    &:hover{
+        border-color: #fff;
+        background-color: #7e7e7e;
+    }
+    &:hover i{
+        color: #fff;
+    }
 }
 
 .comment{
+    position: fixed;
+    right: 30px;
+    bottom: 5%;
+    z-index: 80;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,6 +197,10 @@ export default {
     height: 50px;
     border-radius: 50%;
     background-color: #527ceb;
+    color: #fff;
     cursor: pointer;
+    &:hover{
+        filter: brightness(1.2);
+    }
 }
 </style>
