@@ -361,18 +361,30 @@ export default {
 }
 
 .architect{
-    width: 520px;
+    width: 550px;
     position: relative;
+    cursor: pointer;
     img{
         width: 100%;
         border-radius: 20px;
     }
 }
+
+.architect:hover{
+    animation: mymove 5s;
+}
+
+@keyframes mymove{
+    0%   {right: 400px;}
+    100% {right: 0px;}
+}
+
+
 .arc-color{
-    width: 520px;
+    width: 550px;
     background-color: #38d99b;
     opacity: 0.9;
-    height: 450px;
+    height: 470px;
     position: absolute;
     top: 0;
     z-index: 1;
@@ -380,7 +392,7 @@ export default {
 }
    
 .businesswoman{
-    width: 500px;
+    width: 550px;
     position: absolute;
     z-index: 2;
     left: 7rem;
